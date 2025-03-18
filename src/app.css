@@ -1,1 +1,23 @@
+/*
+ *  Google fonts imports.
+ */
+
+/* Instrument Serif. */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/* Inter. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*
+ *  Import Tailwind CSS.
+ */
 @import 'tailwindcss';
+
+/*
+ *  Custom Tailwind CSS theme variables.
+ */
+@theme {
+	/* Google fonts. */
+	--google-font-instrument: 'Instrument Serif', serif;
+	--google-font-inter: 'Inter', sans-serif;
+}
