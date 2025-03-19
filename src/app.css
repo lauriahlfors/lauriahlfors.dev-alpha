@@ -18,6 +18,13 @@
  */
 @theme {
 	/* Google fonts. */
-	--google-font-instrument: 'Instrument Serif', serif;
-	--google-font-inter: 'Inter', sans-serif;
+	--font-google-instrument: 'Instrument Serif', serif;
+	--font-google-inter: 'Inter', sans-serif;
+
+	/* Theme colors. */
+	--color-background: oklch(97.02% 0 0);
+	--color-foreground: oklch(9.99% 0.035 256.64);
+	--color-primary: oklch(56.35% 0.2408 260.82);
+	--color-secondary: oklch(88.2% 0.0588 253.97);
+	--color-primary-text: oklch(26.59% 0.0075 17.64);
 }
