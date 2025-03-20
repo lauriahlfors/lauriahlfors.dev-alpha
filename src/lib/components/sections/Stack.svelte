@@ -2,7 +2,6 @@
 	import { extractCharacters, normalizeString } from '$lib/utils';
 	import Container from '$lib/components/theme/Container.svelte';
 	import Divider from '$lib/components/theme/Divider.svelte';
-	import StackCard from './StackCard.svelte';
 
 	let effectWord = extractCharacters('experiences');
 
