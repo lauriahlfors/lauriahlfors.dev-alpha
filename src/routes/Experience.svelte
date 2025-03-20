@@ -43,7 +43,7 @@
 		>
 			My work <span class="font-google-instrument text-primary italic">experience</span>.
 		</h1>
-		<div class="grid-bg"></div>
+		<div class="background-grid"></div>
 	</div>
 
 	<!-- Divider -->
