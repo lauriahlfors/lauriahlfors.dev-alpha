@@ -13,3 +13,4 @@ export function extractCharacters(text: string): string[] {
 	const charArray = [...text].map((char) => char);
 	return charArray;
 }
+
