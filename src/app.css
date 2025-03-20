@@ -14,6 +14,13 @@
 @import 'tailwindcss';
 
 /*
+ *  Import stylings.
+ */
+@import '$lib/css/color-cycle.css';
+@import '$lib/css/dancing-word.css';
+@import '$lib/css/background-grid.css';
+
+/*
  *  Custom Tailwind CSS theme variables.
  */
 @theme {
