@@ -28,3 +28,64 @@
 	--color-secondary: oklch(88.2% 0.0588 253.97);
 	--color-primary-text: oklch(26.59% 0.0075 17.64);
 }
+
+/*
+ *  Custom CSS classes.
+ */
+
+.background-grid {
+	position: absolute;
+	z-index: -10;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	background-image:
+		linear-gradient(to right, #bae6fd 1px, transparent 1px),
+		linear-gradient(to bottom, #bae6fd 1px, transparent 1px);
+	background-size: 20px 40px;
+	background-position: 50% 100%;
+	-webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+	mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+}
+
+.color-cycle {
+	animation: color-cycle-animation 3s infinite calc(var(--i) * 100ms) ease-in-out;
+}
+
+.dancing-word {
+	transition: transform 1s ease-out;
+	cursor: pointer;
+	animation:
+		stagger 0.6s infinite calc(var(--i) * 50ms) ease-in-out,
+		color-cycle-animation 1s infinite calc(var(--i) * 50ms) ease-in-out;
+}
+
+@keyframes stagger {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(8px) rotateZ(10deg);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes color-cycle-animation {
+	0% {
+		color: oklch(0.623 0.214 259.815);
+	}
+	25% {
+		color: oklch(0.828 0.189 84.429);
+	}
+	50% {
+		color: oklch(0.841 0.238 128.85);
+	}
+	75% {
+		color: oklch(0.74 0.238 322.16);
+	}
+	100% {
+		color: oklch(0.623 0.214 259.815);
+	}
+}
