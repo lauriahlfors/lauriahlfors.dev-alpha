@@ -48,7 +48,7 @@
 		{
 			title: 'Figma',
 			subtitle: 'UI & UX Design',
-			link: ''
+			link: 'https://www.figma.com/'
 		},
 		{
 			title: 'Blender',
@@ -58,12 +58,12 @@
 		{
 			title: 'Lumix',
 			subtitle: 'Lumix S5 II Camera  ',
-			link: 'https://affinity.serif.com/en-gb/'
+			link: 'https://www.panasonic.com/uk/consumer/cameras-camcorders/lumix-mirrorless-cameras/lumix-s-full-frame-cameras/dc-s5m2.html'
 		},
 		{
 			title: 'DaVinci Resolve',
 			subtitle: 'Video Editing & Compositing',
-			link: 'https://affinity.serif.com/en-gb/'
+			link: 'https://affinity.serif.com/'
 		},
 		{
 			title: 'Adobe CC',
@@ -84,8 +84,8 @@
 			class="font-google-inter text-primary-text z-10 w-[320px] px-12 text-center text-4xl font-light tracking-tight lg:w-[515px] lg:text-5xl"
 		>
 			<span class="font-google-instrument text-primary italic">Tools</span> &
-			<span class="font-google-instrument text-primary italic">Technologies</span> I use to create
-			digital
+			<span class="font-google-instrument text-primary italic">Technologies</span> <br /> I use to
+			create digital
 			{#each word_experinces as letter, i (i)}
 				<span class="color-cycle" style="--i: {i};">{letter}</span>
 			{/each}.
