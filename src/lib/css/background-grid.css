@@ -1,0 +1,14 @@
+.grid-bg {
+	position: absolute;
+	z-index: -10;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	background-image:
+		linear-gradient(to right, #bae6fd 1px, transparent 1px),
+		linear-gradient(to bottom, #bae6fd 1px, transparent 1px);
+	background-size: 20px 40px;
+	background-position: 50% 100%;
+	-webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+	mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+}

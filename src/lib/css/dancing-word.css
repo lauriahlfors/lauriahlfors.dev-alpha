@@ -1,0 +1,22 @@
+@import './color-cycle.css';
+
+.dancing-word {
+	transition: transform 1s ease-out;
+	cursor: pointer;
+	animation:
+		stagger-individual 0.6s infinite calc(var(--i) * 50ms) ease-in-out,
+		color-cycle-animation 1s infinite calc(var(--i) * 50ms) ease-in-out;
+}
+
+/* Keyframes. */
+@keyframes stagger-individual {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(8px) rotateZ(10deg);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

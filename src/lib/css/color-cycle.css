@@ -1,0 +1,21 @@
+.color-cycle {
+	animation: color-cycle-animation 3s infinite calc(var(--i) * 100ms) ease-in-out;
+}
+
+@keyframes color-cycle-animation {
+	0% {
+		color: oklch(0.623 0.214 259.815);
+	}
+	25% {
+		color: oklch(0.828 0.189 84.429);
+	}
+	50% {
+		color: oklch(0.841 0.238 128.85);
+	}
+	75% {
+		color: oklch(0.74 0.238 322.16);
+	}
+	100% {
+		color: oklch(0.623 0.214 259.815);
+	}
+}
