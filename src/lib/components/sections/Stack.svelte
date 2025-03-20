@@ -149,7 +149,27 @@
 
 			<!-- List tech items. -->
 			{#each stackListCreative as stackItem}
-				<StackCard link={stackItem.link} title={stackItem.title} subtitle={stackItem.subtitle} />
+				<a href={`${stackItem.link}`} target="_blank" rel="noopener noreferer">
+					<div class="bg-background col-span-1 flex min-h-28 items-center justify-start gap-4 px-6">
+						<img
+							class="size-12 2xl:size-14"
+							width="128px"
+							height="128px"
+							src={`/logos/${normalizeString(stackItem.title)}.png`}
+							alt={`${stackItem.title}`}
+						/>
+						<div>
+							<h1
+								class="font-google-inter text-primary-text text-xl font-medium tracking-tight 2xl:text-2xl"
+							>
+								{stackItem.title}
+							</h1>
+							<p class="font-google-inter text-xs font-light text-neutral-500 2xl:text-sm">
+								{stackItem.subtitle}
+							</p>
+						</div>
+					</div></a
+				>
 			{/each}
 		</div>
 	</div>
