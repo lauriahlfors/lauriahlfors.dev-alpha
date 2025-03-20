@@ -1,1 +1,5 @@
-<h1>Lauri Ahlfors</h1>
+<script lang="ts">
+	import Stack from '$lib/components/sections/stack/Stack.svelte';
+</script>
+
+<Stack />
